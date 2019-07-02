@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 1</title>
+</head>
+<body>
+<script>
+    //Bài 1: Nhập 2 số a và b, kiểm tra hết quả xem a có chia hết cho b ko
+    // let a = Number(prompt('Nhập số a:', ''));
+    // let b = Number(prompt('Nhập số b:', ''));
+    // if (a % b == 0) {
+    //     alert('a chia hết cho b');
+    // } else if (a % b != 0) {
+    //     alert('a không chia hết cho b');
+    // } else {
+    //     alert('a or b không phải là số')
+    // }
+
+    //Bài 2:Nhập tuổi và in ra kết quả nếu học sinh đó không đủ điều kiện vào học lớp 10
+    // let inputAge = parseInt(prompt('Nhập tuổi học sinh:', ''));
+    // if (inputAge != 16) {
+    //     alert('Học sinh không đủ điều kiện vào lớp 10');
+    // } else if (inputAge == 16) {
+    //     alert('Học sinh đủ điều kiện vào lớp 10');
+    // } else {
+    //     alert('Không phải tuổi')
+    // }
+
+    // Bài 3: Nhập vào số nguyên bất kỳ và in kết quả ra màn hình để cho người dùng biết số đó là lớn hay nhỏ hơn 0
+    // let inputNumber = parseInt(prompt('Nhập vào số nguyên:', ''));
+    // if (inputNumber < 0) {
+    //     alert(inputNumber + ' là số nhỏ hơn 0');
+    // } else if (inputNumber > 0) {
+    //     alert((inputNumber + ' là số lớn hơn 0'));
+    // } else if (inputNumber == 0) {
+    //     alert(inputNumber + ' là số bằng 0');
+    // } else {
+    //     alert(inputNumber + ' không phải là số nguyên')
+    // }
+
+
+    //Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của 3 số nguyên đó
+    // let number1 = parseInt(prompt('Nhập số nguyên thứ 1', ''));
+    // let number2 = parseInt(prompt('Nhập số nguyên thứ 2', ''));
+    // let number3 = parseInt(prompt('Nhập số nguyên thứ 3', ''));
+    // let max = number1;
+    // if (max < number2) {
+    //     max = number2;
+    // }
+    // if (max < number3) {
+    //     max = number3;
+    // }
+    // alert(max+' là số lơn nhất trong 3 số '+'');
+
+    //Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+    // let score = Number(prompt('Nhập điểm bài kiểm tra', ''));
+    // let midScore = Number(prompt('Nhập điểm thi giữa kỳ', ''));
+    // let finalScore = Number(prompt('Nhập điểm thi cuối kỳ', ''));
+    // let mediumScore;
+    // if (score >= 0 && midScore >= 0 && finalScore >= 0) {
+    //     mediumScore = (score + midScore * 2 + finalScore * 3) / 6;
+    // } else {
+    //     alert('Điểm bài kiểm tra or điểm thi giữa kỳ or điểm thi cuối kỳ không đúng!')
+    // }
+    // if (mediumScore <= 10 && mediumScore >= 9) {
+    //     alert('Học sinh xuất sắc');
+    // } else if (mediumScore >= 8) {
+    //     alert('Học sinh giỏi');
+    // } else if (mediumScore >= 7) {
+    //     alert('Học sinh khá');
+    // } else if (mediumScore >= 6) {
+    //     alert('Học sinh trung bình khá');
+    // } else if (mediumScore >= 5) {
+    //     alert('Học sinh trung bình');
+    // } else if (mediumScore >= 4) {
+    //     alert('Học sinh yếu');
+    // } else {
+    //     alert('Học sinh kém');
+    // }
+
+    //Bài 6: Tính hoa hồng nhận được tùy theo mức doanh số bán hàng
+    // let sales = Number(prompt('Nhập doanh số bán hàng ($)', ''));
+    // if (sales > 1000) {
+    //     alert('Được 10% hoa hồng');
+    // } else if (sales > 500) {
+    //     alert('Được 5% hoa hồng');
+    // } else {
+    //     alert('Không được hoa hồng')
+    // }
+
+    //Bài 7: Tính cước điện thoại cho 1 hộ gia đình với các thông số đã cho
+    let hours = Number(prompt('Nhập số giờ đã gọi trong tháng'));
+    let minute;
+    let phoneCharges;
+    minute = hours * 60;
+    phoneCharges = minute * 200;
+    alert('Cước điện thoại đã sử dụng là: ' + phoneCharges + ' VND')
+
+</script>
+</body>
+</html>
